@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASACAS TYS | Tienda Oficial</title>
+    <style>
+        /* Paleta de Colores y Estilos Globales */
+        :root {
+            --negro-fondo: #0a0a0a;
+            --negro-card: #161616;
+            --azul-electrico: #007bff;
+            --azul-glow: #00d4ff;
+            --blanco: #ffffff;
+        }
+
+        body {
+            background-color: var(--negro-fondo);
+            color: var(--blanco);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Título Principal */
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--azul-electrico);
+            text-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Contenedor de Productos */
+        .tienda-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Recuadros de Camisetas (Cards) */
+        .casaca-card {
+            background-color: var(--negro-card);
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .casaca-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--azul-electrico);
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+        }
+
+        .casaca-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .nombre-casaca {
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+
+        .precio {
+            font-size: 1.2rem;
+            color: var(--azul-glow);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Botón de WhatsApp */
+        .btn-comprar {
+            display: inline-block;
+            background-color: var(--azul-electrico);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: var(--azul-glow);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CASACAS TYS</h1>
+
+    <div class="tienda-container">
+        
+        <div class="casaca-card">
+            <img src="https://via.placeholder.com/250x300/161616/007bff?text=Camiseta+1" alt="Casaca Local">
+            <div class="nombre-casaca">Casaca Titular 2024</div>
+            <div class="precio">$45.00</div>
+            <a href="https://wa.me/TU_NUMERO_AQUI?text=Hola!%20Me%20interesa%20la%20Casaca%20Titular%202024" class="btn-comprar">Comprar ahora</a>
+        </div>
+
+        <div class="casaca-card">
+            <img src="https://via.placeholder.com/250x300/161616/007bff?text=Camiseta+2" alt="Casaca Alterna">
+            <div class="nombre-casaca">Casaca Alterna Blue</div>
+            <div class="precio">$42.00</div>
+            <a href="https://wa.me/TU_NUMERO_AQUI?text=Hola!%20Me%20interesa%20la%20Casaca%20Alterna%20Blue" class="btn-comprar">Comprar ahora</a>
+        </div>
+
+        <div class="casaca-card">
+            <img src="https://via.placeholder.com/250x300/161616/007bff?text=Camiseta+3" alt="Casaca Entrenamiento">
+            <div class="nombre-casaca">Casaca Training Dark</div>
+            <div class="precio">$38.00</div>
+            <a href="https://wa.me/TU_NUMERO_AQUI?text=Hola!%20Me%20interesa%20la%20Casaca%20Training%20Dark" class="btn-comprar">Comprar ahora</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
